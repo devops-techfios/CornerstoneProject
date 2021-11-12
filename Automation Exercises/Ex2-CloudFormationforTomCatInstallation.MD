@@ -2,7 +2,8 @@
 
 ### Pre-requisites
 1. EC2 instance with Java v1.8.x
-2. The Tomcat installation slips goes into the user data section or is used as a custom script within the cloud formation template
+
+Copy a suitable cloud formation template from reference material [https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/deploying.applications.html] and add the below steps under UserData section. UserData section is used to execute custom shell scripts after a new server is builtThe Tomcat installation steps goes into the user data section.
 
 
 ### Install Apache Tomcat
@@ -25,7 +26,7 @@
    ln -s /opt/apache-tomcat-8.5.35/bin/shutdown.sh /usr/local/bin/tomcatdown
    tomcatup
    ```
-  #### Check point :
+ ### Validation test to confirm after installation. Not required for automation
 access tomcat application from browser on port 8080  
  - http://<Public_IP>:8080
 
