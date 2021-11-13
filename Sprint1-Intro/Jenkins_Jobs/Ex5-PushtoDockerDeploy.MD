@@ -1,4 +1,4 @@
-# Write a Jenkinsfile to build a Maven Project
+# Write a Jenkinsfile to create docker image and push to dockerhub
 
 ### Pre-requisites
 1. Maven plugin should be installed in Jenkins. By default maven plugin will be installed in Jenkins
